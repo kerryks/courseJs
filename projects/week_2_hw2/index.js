@@ -78,7 +78,7 @@ function returnBadArguments(fn, ...args) {
     throw new Error('fn is not a function');
   }
 
-  for (let i = 1; i <= args.length; i++) {
+  for (let i = 0; i < args.length; i++) {
     try {
       fn(args[i]);
     } catch {
